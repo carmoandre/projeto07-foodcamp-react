@@ -1,22 +1,21 @@
-import ReactDOM from "react-dom";
-
 export default function App() {
+    console.log("oi");
     return (
-        <div>
-            <div class='topBar'>
+        <>
+            <div class="topBar">
                 <p>FoodCamp</p>
                 <p>Sua comida em 6 minutos</p>
             </div>
-            <div class='content'>
+            <div class="content">
                 <p>Primeiro, seu prato</p>
                 <ul>
                     <li
                         onclick="selectUnicOption('.mealOptions', '.first')"
-                        class='mealOptions first whiteBorder'
+                        class="mealOptions first whiteBorder"
                     >
                         <img
-                            src='src/images/feijoada.jpg'
-                            alt='Panela com feijoada'
+                            src="images/feijoada.jpg"
+                            alt="Panela com feijoada"
                         />
                         <p>Feijoada</p>
                         <p>Feijão preto com carne de porco</p>
@@ -24,17 +23,17 @@ export default function App() {
                             R$ <span>19,90</span>
                         </p>
                         <ion-icon
-                            name='checkmark-circle'
-                            class='hiddingClass first'
+                            name="checkmark-circle"
+                            class="hiddingClass first"
                         ></ion-icon>
                     </li>
                     <li
                         onclick="selectUnicOption('.mealOptions', '.second')"
-                        class='mealOptions second whiteBorder'
+                        class="mealOptions second whiteBorder"
                     >
                         <img
-                            src='src/images/isca-de-peixe-frito.jpg'
-                            alt='Travessa com peixe empanado em iscas'
+                            src="images/isca-de-peixe-frito.jpg"
+                            alt="Travessa com peixe empanado em iscas"
                         />
                         <p>Peixe Frito</p>
                         <p>250g de iscas empanadas em fubá</p>
@@ -42,17 +41,17 @@ export default function App() {
                             R$ <span>21,00</span>
                         </p>
                         <ion-icon
-                            name='checkmark-circle'
-                            class='hiddingClass second'
+                            name="checkmark-circle"
+                            class="hiddingClass second"
                         ></ion-icon>
                     </li>
                     <li
                         onclick="selectUnicOption('.mealOptions', '.third')"
-                        class='mealOptions third whiteBorder'
+                        class="mealOptions third whiteBorder"
                     >
                         <img
-                            src='src/images/Ometele-de-frios-com-cebolinha-e-salsa-1.jpg'
-                            alt='Omelete recheado com presunto, muçarela e temperos frescos'
+                            src="images/Ometele-de-frios-com-cebolinha-e-salsa-1.jpg"
+                            alt="Omelete recheado com presunto, muçarela e temperos frescos"
                         />
                         <p>Omelete de frios</p>
                         <p>Presunto, muçarela, salsa e cebolinha</p>
@@ -60,17 +59,17 @@ export default function App() {
                             R$ <span>18,60</span>
                         </p>
                         <ion-icon
-                            name='checkmark-circle'
-                            class='hiddingClass third'
+                            name="checkmark-circle"
+                            class="hiddingClass third"
                         ></ion-icon>
                     </li>
                     <li
                         onclick="selectUnicOption('.mealOptions', '.fourth')"
-                        class='mealOptions fourth whiteBorder'
+                        class="mealOptions fourth whiteBorder"
                     >
                         <img
-                            src='src/images/bife e batata.jpg'
-                            alt='Arroz, feijão, bife de boi e batata frita em palito'
+                            src="images/bife e batata.jpg"
+                            alt="Arroz, feijão, bife de boi e batata frita em palito"
                         />
                         <p>Prato Feito 1</p>
                         <p>Arroz, feijão, bife de boi e batata frita</p>
@@ -78,8 +77,8 @@ export default function App() {
                             R$ <span>22,00</span>
                         </p>
                         <ion-icon
-                            name='checkmark-circle'
-                            class='hiddingClass fourth'
+                            name="checkmark-circle"
+                            class="hiddingClass fourth"
                         ></ion-icon>
                     </li>
                 </ul>
@@ -87,11 +86,11 @@ export default function App() {
                 <ul>
                     <li
                         onclick="selectUnicOption('.drinkOptions', '.first')"
-                        class='drinkOptions first whiteBorder'
+                        class="drinkOptions first whiteBorder"
                     >
                         <img
-                            src='src/images/guarana comum e zero.jpg'
-                            alt='Duas latas de guaraná antarctica, uma tradicional e uma zero açúcar'
+                            src="images/guarana comum e zero.jpg"
+                            alt="Duas latas de guaraná antarctica, uma tradicional e uma zero açúcar"
                         />
                         <p>Guaraná Antarctica</p>
                         <p>Lata 350ml - Comum ou Zero</p>
@@ -99,17 +98,17 @@ export default function App() {
                             R$ <span>6,50</span>
                         </p>
                         <ion-icon
-                            name='checkmark-circle'
-                            class='hiddingClass first'
+                            name="checkmark-circle"
+                            class="hiddingClass first"
                         ></ion-icon>
                     </li>
                     <li
                         onclick="selectUnicOption('.drinkOptions', '.second')"
-                        class='drinkOptions second whiteBorder'
+                        class="drinkOptions second whiteBorder"
                     >
                         <img
-                            src='src/images/latas-coca-cola-natal_2018_ok-e1543862115938.jpg'
-                            alt='Duas latas de coca-cola, uma tradicional e uma zero açúcar'
+                            src="images/latas-coca-cola-natal_2018_ok-e1543862115938.jpg"
+                            alt="Duas latas de coca-cola, uma tradicional e uma zero açúcar"
                         />
                         <p>Coca Cola</p>
                         <p>Lata 350ml - Comum ou Zero</p>
@@ -117,17 +116,17 @@ export default function App() {
                             R$ <span>7,10</span>
                         </p>
                         <ion-icon
-                            name='checkmark-circle'
-                            class='hiddingClass second'
+                            name="checkmark-circle"
+                            class="hiddingClass second"
                         ></ion-icon>
                     </li>
                     <li
                         onclick="selectUnicOption('.drinkOptions', '.third')"
-                        class='drinkOptions third whiteBorder'
+                        class="drinkOptions third whiteBorder"
                     >
                         <img
-                            src='src/images/mate-couro.jpg'
-                            alt='Duas garrafas pet de mate couro, uma tradicional e uma zero açúcar'
+                            src="images/mate-couro.jpg"
+                            alt="Duas garrafas pet de mate couro, uma tradicional e uma zero açúcar"
                         />
                         <p>Mate Couro</p>
                         <p>Pet 1L - Comum ou Zero</p>
@@ -135,17 +134,17 @@ export default function App() {
                             R$ <span>4,90</span>
                         </p>
                         <ion-icon
-                            name='checkmark-circle'
-                            class='hiddingClass third'
+                            name="checkmark-circle"
+                            class="hiddingClass third"
                         ></ion-icon>
                     </li>
                     <li
                         onclick="selectUnicOption('.drinkOptions', '.fourth')"
-                        class='drinkOptions fourth whiteBorder'
+                        class="drinkOptions fourth whiteBorder"
                     >
                         <img
-                            src='src/images/guaraná-jesus.jpg'
-                            alt='uma lata de guaraná jesus'
+                            src="images/guaraná-jesus.jpg"
+                            alt="uma lata de guaraná jesus"
                         />
                         <p>Guaraná Jesus</p>
                         <p>Lata 350ml - Produto Maranhense</p>
@@ -153,8 +152,8 @@ export default function App() {
                             R$ <span>5,50</span>
                         </p>
                         <ion-icon
-                            name='checkmark-circle'
-                            class='hiddingClass fourth'
+                            name="checkmark-circle"
+                            class="hiddingClass fourth"
                         ></ion-icon>
                     </li>
                 </ul>
@@ -162,11 +161,11 @@ export default function App() {
                 <ul>
                     <li
                         onclick="selectUnicOption('.dessertOptions', '.first')"
-                        class='dessertOptions first whiteBorder'
+                        class="dessertOptions first whiteBorder"
                     >
                         <img
-                            src='src/images/bolo de pote sensação.jpg'
-                            alt='bolo de chocolate com creme de morango enformado em pode plastico cilíndrico'
+                            src="images/bolo de pote sensação.jpg"
+                            alt="bolo de chocolate com creme de morango enformado em pode plastico cilíndrico"
                         />
                         <p>Bolo de pote</p>
                         <p>Sensação (morango com chocolate)</p>
@@ -174,17 +173,17 @@ export default function App() {
                             R$ <span>12,40</span>
                         </p>
                         <ion-icon
-                            name='checkmark-circle'
-                            class='hiddingClass first'
+                            name="checkmark-circle"
+                            class="hiddingClass first"
                         ></ion-icon>
                     </li>
                     <li
                         onclick="selectUnicOption('.dessertOptions', '.second')"
-                        class='dessertOptions second whiteBorder'
+                        class="dessertOptions second whiteBorder"
                     >
                         <img
-                            src='src/images/petit-gateau-1200x774.jpg'
-                            alt='uma cola de sorvete de creme sevida em um brato com bolo de chocolate'
+                            src="images/petit-gateau-1200x774.jpg"
+                            alt="uma cola de sorvete de creme sevida em um brato com bolo de chocolate"
                         />
                         <p>Petit Gâteau</p>
                         <p>Sorvete de creme, bolo de chocolate</p>
@@ -192,17 +191,17 @@ export default function App() {
                             R$ <span>14,20</span>
                         </p>
                         <ion-icon
-                            name='checkmark-circle'
-                            class='hiddingClass second'
+                            name="checkmark-circle"
+                            class="hiddingClass second"
                         ></ion-icon>
                     </li>
                     <li
                         onclick="selectUnicOption('.dessertOptions', '.third')"
-                        class='dessertOptions third whiteBorder'
+                        class="dessertOptions third whiteBorder"
                     >
                         <img
-                            src='src/images/torta de limão.jpg'
-                            alt='fatia de torta de limão com merengue em um prato'
+                            src="images/torta de limão.jpg"
+                            alt="fatia de torta de limão com merengue em um prato"
                         />
                         <p>Torta de Limão</p>
                         <p>Torta de limão com merengue (fatia)</p>
@@ -210,17 +209,17 @@ export default function App() {
                             R$ <span>13,60</span>
                         </p>
                         <ion-icon
-                            name='checkmark-circle'
-                            class='hiddingClass third'
+                            name="checkmark-circle"
+                            class="hiddingClass third"
                         ></ion-icon>
                     </li>
                     <li
                         onclick="selectUnicOption('.dessertOptions', '.fourth')"
-                        class='dessertOptions fourth whiteBorder'
+                        class="dessertOptions fourth whiteBorder"
                     >
                         <img
-                            src='src/images/mousse de maracujá.jpg'
-                            alt='mousse de maracujá com calda de maracujá por cima enformada em vasilha plástica em formado similar a uma meia esfera'
+                            src="images/mousse de maracujá.jpg"
+                            alt="mousse de maracujá com calda de maracujá por cima enformada em vasilha plástica em formado similar a uma meia esfera"
                         />
                         <p>Mousse de Maracujá</p>
                         <p>Mousse e calda feitas da fruta</p>
@@ -228,50 +227,49 @@ export default function App() {
                             R$ <span>11,80</span>
                         </p>
                         <ion-icon
-                            name='checkmark-circle'
-                            class='hiddingClass fourth'
+                            name="checkmark-circle"
+                            class="hiddingClass fourth"
                         ></ion-icon>
                     </li>
                 </ul>
             </div>
-            <div class='bottomBar'>
+            <div class="bottomBar">
                 <button
-                    class='bottomBarButton'
-                    onclick='resquestClientInfo()'
+                    class="bottomBarButton"
+                    onclick="resquestClientInfo()"
                     disabled
                 >
                     Selecione os 3 itens para fechar o pedido
                 </button>
             </div>
-            <div class='confimationScreen hiddingClass'>
-                <div class='confirmationModal'>
+            <div class="confimationScreen hiddingClass">
+                <div class="confirmationModal">
                     <p>Confirme seu pedido</p>
-                    <span class='meal'>
+                    <span class="meal">
                         <p>Refeição</p>
                         <p>Valor</p>
                     </span>
-                    <span class='drink'>
+                    <span class="drink">
                         <p>Bebida</p>
                         <p>Valor</p>
                     </span>
-                    <span class='dessert'>
+                    <span class="dessert">
                         <p>Sobremesa</p>
                         <p>Valor</p>
                     </span>
-                    <span class='total'>
+                    <span class="total">
                         <p>TOTAL</p>
                         <p>R$ Valor</p>
                     </span>
-                    <button class='sentOrderButton'>
-                        <a href='' target='_blank'>
+                    <button class="sentOrderButton">
+                        <a href="" target="_blank">
                             Tudo certo, pode pedir!
                         </a>
                     </button>
-                    <button onclick='cancelModalAction()'>Cancelar</button>
+                    <button onclick="cancelModalAction()">Cancelar</button>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
-
-ReactDOM.render(<App />, document.querySelector(".root"));
+console.log(document.querySelector(".root"));
