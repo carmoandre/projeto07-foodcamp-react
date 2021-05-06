@@ -1,14 +1,14 @@
-export default function Option() {
+export default function Option(props) {
     return (
         <li
-            onclick="selectUnicOption('.mealOptions', '.first')"
-            class="mealOptions first whiteBorder"
+            onClick="selectUnicOption('.mealOptions', '.first')"
+            class={props.class}
         >
-            <img src="images/feijoada.jpg" alt="Panela com feijoada" />
-            <p>Feijoada</p>
-            <p>Feijão preto com carne de porco</p>
+            <img src={props.image} alt={props.alt} />
+            <p>{props.name}</p>
+            <p>{props.description}</p>
             <p>
-                R$ <span>19,90</span>
+                R$ <span>{props.price}</span>
             </p>
             <ion-icon
                 name="checkmark-circle"

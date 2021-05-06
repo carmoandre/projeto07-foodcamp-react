@@ -5,7 +5,38 @@ export default function Content() {
         <div class="content">
             <p>Primeiro, seu prato</p>
             <ul>
-                <Option />
+                <Option
+                    class="mealOptions first whiteBorder"
+                    image="images/feijoada.jpg"
+                    alt="Panela com feijoada"
+                    name="Feijoada"
+                    description="Feijão preto com carne de porco"
+                    price="19,90"
+                />
+                <Option
+                    class="mealOptions second whiteBorder"
+                    image="images/isca-de-peixe-frito.jpg"
+                    alt="Travessa com peixe empanado em iscas"
+                    name="Peixe Frito"
+                    description="250g de iscas empanadas em fubá"
+                    price="21,00"
+                />
+                <Option
+                    class="mealOptions third whiteBorder"
+                    image="images/Ometele-de-frios-com-cebolinha-e-salsa-1.jpg"
+                    alt="Omelete recheado com presunto, muçarela e temperos frescos"
+                    name="Omelete de frios"
+                    description="Presunto, muçarela, salsa e cebolinha"
+                    price="18,60"
+                />
+                <Option
+                    class="mealOptions fourth whiteBorder"
+                    image="images/bife e batata.jpg"
+                    alt="Arroz, feijão, bife de boi e batata frita em palito"
+                    name="Prato Feito 1"
+                    description="Arroz, feijão, bife de boi e batata frita"
+                    price="22,00"
+                />
                 <li
                     onclick="selectUnicOption('.mealOptions', '.second')"
                     class="mealOptions second whiteBorder"
