@@ -5,7 +5,6 @@ export default function Counter(props) {
         counterClass,
         setCounterClass,
         setSelection,
-        optionClass,
     } = props;
 
     function addOne() {
