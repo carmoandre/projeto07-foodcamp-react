@@ -1,11 +1,28 @@
 export default function Counter(props) {
-    function addOne() {}
-    function removeOne() {}
+    const {
+        counter,
+        setCounter,
+        counterClass,
+        setCounterClass,
+        setSelection,
+        optionClass,
+    } = props;
+
+    function addOne() {
+        setCounter(counter + 1);
+    }
+    function removeOne() {
+        if (counter === 1) {
+            setSelection("whiteBorder");
+            setCounterClass("counter hiddingClass");
+        }
+        setCounter(counter - 1);
+    }
     return (
-        <div>
-            <span onClick>-</span>
-            <span>{props.quantity}</span>
-            <span onClick>+</span>
-        </div>
+        <p class={counterClass}>
+            <span onClick={removeOne}>- </span>
+            <span> {counter} </span>
+            <span onClick={addOne}> +</span>
+        </p>
     );
 }
