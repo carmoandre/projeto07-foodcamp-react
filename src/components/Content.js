@@ -1,48 +1,25 @@
 import Option from "./Option";
 import { mealOptions, drinkOptions, dessertOptions } from "./OptionsData";
 
-export default function Content() {
+export default function Content(props) {
+    function constructHTMLItems(option, index) {
+        return (
+            <Option
+                key={index}
+                option={option}
+                order={props.order}
+                setOrder={props.setOrder}
+            />
+        );
+    }
     return (
-        <div class="content">
+        <div className="content">
             <p>Primeiro, seu prato</p>
-            <ul>
-                {mealOptions.map((option, index) => (
-                    <Option
-                        key={index}
-                        image={option.image}
-                        alt={option.alt}
-                        name={option.name}
-                        description={option.description}
-                        price={option.price}
-                    />
-                ))}
-            </ul>
+            <ul>{props.order[0].map(constructHTMLItems)}</ul>
             <p>Agora, sua bebida</p>
-            <ul>
-                {drinkOptions.map((option, index) => (
-                    <Option
-                        key={index}
-                        image={option.image}
-                        alt={option.alt}
-                        name={option.name}
-                        description={option.description}
-                        price={option.price}
-                    />
-                ))}
-            </ul>
+            <ul>{props.order[1].map(constructHTMLItems)}</ul>
             <p>Por fim, sua sobremesa</p>
-            <ul>
-                {dessertOptions.map((option, index) => (
-                    <Option
-                        key={index}
-                        image={option.image}
-                        alt={option.alt}
-                        name={option.name}
-                        description={option.description}
-                        price={option.price}
-                    />
-                ))}
-            </ul>
+            <ul>{props.order[2].map(constructHTMLItems)}</ul>
         </div>
     );
 }

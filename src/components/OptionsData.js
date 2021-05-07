@@ -5,6 +5,7 @@ const mealOptions = [
         name: "Feijoada",
         description: "Feijão preto com carne de porco",
         price: "19,90",
+        quantity: 0,
     },
     {
         image: "images/isca-de-peixe-frito.jpg",
@@ -12,6 +13,7 @@ const mealOptions = [
         name: "Peixe Frito",
         description: "250g de iscas empanadas em fubá",
         price: "21,00",
+        quantity: 0,
     },
     {
         image: "images/Ometele-de-frios-com-cebolinha-e-salsa-1.jpg",
@@ -19,6 +21,7 @@ const mealOptions = [
         name: "Omelete de frios",
         description: "Presunto, muçarela, salsa e cebolinha",
         price: "18,60",
+        quantity: 0,
     },
     {
         image: "images/bife e batata.jpg",
@@ -26,6 +29,7 @@ const mealOptions = [
         name: "Prato Feito 1",
         description: "Arroz, feijão, bife de boi e batata frita",
         price: "22,00",
+        quantity: 0,
     },
 ];
 const drinkOptions = [
@@ -36,6 +40,7 @@ const drinkOptions = [
         name: "Guaraná Antarctica",
         description: "Lata 350ml - Comum ou Zero",
         price: "6,50",
+        quantity: 0,
     },
     {
         image: "images/latas-coca-cola-natal_2018_ok-e1543862115938.jpg",
@@ -43,6 +48,7 @@ const drinkOptions = [
         name: "Coca Cola",
         description: "Lata 350ml - Comum ou Zero",
         price: "7,10",
+        quantity: 0,
     },
     {
         image: "images/mate-couro.jpg",
@@ -51,6 +57,7 @@ const drinkOptions = [
         name: "Mate Couro",
         description: "Pet 1L - Comum ou Zero",
         price: "4,90",
+        quantity: 0,
     },
     {
         image: "images/guaraná-jesus.jpg",
@@ -58,6 +65,7 @@ const drinkOptions = [
         name: "Guaraná Jesus",
         description: "Lata 350ml - Produto Maranhense",
         price: "5,50",
+        quantity: 0,
     },
 ];
 const dessertOptions = [
@@ -68,6 +76,7 @@ const dessertOptions = [
         name: "Bolo de pote",
         description: "Sensação (morango com chocolate)",
         price: "12,40",
+        quantity: 0,
     },
     {
         image: "images/petit-gateau-1200x774.jpg",
@@ -76,6 +85,7 @@ const dessertOptions = [
         name: "Petit Gâteau",
         description: "Sorvete de creme, bolo de chocolate",
         price: "14,20",
+        quantity: 0,
     },
     {
         image: "images/torta de limão.jpg",
@@ -83,6 +93,7 @@ const dessertOptions = [
         name: "Torta de Limão",
         description: "Torta de limão com merengue (fatia)",
         price: "13,60",
+        quantity: 0,
     },
     {
         image: "images/mousse de maracujá.jpg",
@@ -91,6 +102,7 @@ const dessertOptions = [
         name: "Mousse de Maracujá",
         description: "Mousse e calda feitas da fruta",
         price: "11,80",
+        quantity: 0,
     },
 ];
 

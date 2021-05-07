@@ -1,12 +1,8 @@
 export default function Bottombar(props) {
-    function showCofnirmationScreen() {
-        props.setConfirmationVisibility("confimationScreen");
-    }
+    console.log(props.finalOrder);
     return (
         <div class="bottomBar">
-            <button class="bottomBarButton" onclick="resquestClientInfo()">
-                Selecione os 3 itens para fechar o pedido
-            </button>
+            <button className={props.buttonClass}>{props.text}</button>
         </div>
     );
 }
