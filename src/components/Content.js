@@ -1,5 +1,4 @@
 import Option from "./Option";
-import { mealOptions, drinkOptions, dessertOptions } from "./OptionsData";
 
 export default function Content(props) {
     function constructHTMLItems(option, index) {

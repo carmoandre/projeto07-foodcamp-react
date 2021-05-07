@@ -1,8 +1,11 @@
 export default function Bottombar(props) {
-    console.log(props.finalOrder);
     return (
         <div class="bottomBar">
-            <button className={props.buttonClass}>{props.text}</button>
+            <button className={props.buttonClass}>
+                <a href={props.link} target="_blank">
+                    {props.text}
+                </a>
+            </button>
         </div>
     );
 }

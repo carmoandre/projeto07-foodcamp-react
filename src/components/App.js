@@ -3,6 +3,7 @@ import { mealOptions, drinkOptions, dessertOptions } from "./OptionsData";
 import Topbar from "./Topbar";
 import Content from "./Content";
 import Bottombar from "./Bottombar";
+import { buildOrderLink } from "./WhatsAppLinkBuilder";
 
 export default function App() {
     const [order, setOrder] = React.useState([
@@ -10,6 +11,7 @@ export default function App() {
         drinkOptions,
         dessertOptions,
     ]);
+    const hasAllCategories = canEnableButton();
 
     function canEnableButton() {
         const mealsOrdered = order[0].filter((option) => option.quantity > 0);
@@ -26,24 +28,27 @@ export default function App() {
         );
     }
 
-    console.log(canEnableButton());
-
     return (
         <>
             <Topbar />
             <Content order={order} setOrder={setOrder} />
             <Bottombar
                 buttonClass={
-                    canEnableButton() !== 0
+                    hasAllCategories !== 0
                         ? "bottomBarButton enabledButton"
                         : "bottomBarButton"
                 }
                 text={
-                    canEnableButton() !== 0
+                    hasAllCategories !== 0
                         ? "Fechar pedido"
                         : "Selecione os 3 itens para fechar o pedido"
                 }
-                finalOrder={canEnableButton()}
+                link={
+                    hasAllCategories !== 0
+                        ? buildOrderLink(hasAllCategories)
+                        : ""
+                }
+                finalOrder={hasAllCategories}
             />
         </>
     );
