@@ -4,11 +4,7 @@ function buildOrderLink(order) {
 
 function buildOrderEncodedText(order) {
     let orderPrice = calculateTotalPrice(order);
-
-    console.log(`Preço total: ${orderPrice}`);
     orderPrice = orderPrice.toFixed(2).toString().replace(".", ",");
-    console.log(`Preço convertido pra string: ${orderPrice}`);
-
     const url = `
         Olá, gostaria de fazer o pedido:\n- Pratos: 
         ${order[0].map(printChosen)} 
