@@ -1,6 +1,9 @@
-export default function ConfirmationScreen() {
+export default function ConfirmationScreen(props) {
+    function cancelModalAction() {
+        props.setConfirmationVisibility("confimationScreen hiddingClass");
+    }
     return (
-        <div class="confimationScreen hiddingClass">
+        <div class={props.confimationVisibility}>
             <div class="confirmationModal">
                 <p>Confirme seu pedido</p>
                 <span class="meal">
@@ -24,7 +27,7 @@ export default function ConfirmationScreen() {
                         Tudo certo, pode pedir!
                     </a>
                 </button>
-                <button onclick="cancelModalAction()">Cancelar</button>
+                <button onClick={cancelModalAction}>Cancelar</button>
             </div>
         </div>
     );

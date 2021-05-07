@@ -6,8 +6,9 @@ export default function Content() {
         <div class="content">
             <p>Primeiro, seu prato</p>
             <ul>
-                {mealOptions.map((option) => (
+                {mealOptions.map((option, index) => (
                     <Option
+                        key={index}
                         image={option.image}
                         alt={option.alt}
                         name={option.name}
@@ -18,8 +19,9 @@ export default function Content() {
             </ul>
             <p>Agora, sua bebida</p>
             <ul>
-                {drinkOptions.map((option) => (
+                {drinkOptions.map((option, index) => (
                     <Option
+                        key={index}
                         image={option.image}
                         alt={option.alt}
                         name={option.name}
@@ -30,8 +32,9 @@ export default function Content() {
             </ul>
             <p>Por fim, sua sobremesa</p>
             <ul>
-                {dessertOptions.map((option) => (
+                {dessertOptions.map((option, index) => (
                     <Option
+                        key={index}
                         image={option.image}
                         alt={option.alt}
                         name={option.name}

@@ -11,7 +11,7 @@ export default function Option(props) {
         if (counter === 0) {
             setCounter(1);
             setSelection("");
-            setCounterClass("counter ");
+            setCounterClass("counter");
         }
     }
     return (
