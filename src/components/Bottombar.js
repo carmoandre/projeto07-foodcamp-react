@@ -1,8 +1,8 @@
 export default function Bottombar(props) {
     return (
-        <div class="bottomBar">
+        <div className="bottomBar">
             <button className={props.buttonClass}>
-                <a href={props.link} target="_blank">
+                <a href={props.link} target="_blank" rel="noreferrer">
                     {props.text}
                 </a>
             </button>
