@@ -27,7 +27,6 @@ function calculateTotalPrice(order) {
             (total += Number(item.price.replace(",", ".")) * item.quantity),
         0
     );
-    console.log(list);
     return totalPrice;
 }
 
